@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --line: #e5e7eb;
+}
+
+html, body, #__next { height: 100%; }
+
+body {
+  @apply bg-[#f6f8fc] text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-200;
+}
+
+.container-page {
+  @apply px-8 py-8;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-card border border-slate-100 dark:bg-slate-900 dark:border-slate-800;
+}
+
+.badge-dot {
+  @apply inline-flex items-center gap-2 text-sm text-slate-500;
+}
+.badge-dot::before {
+  content: "";
+  @apply block w-2.5 h-2.5 rounded-full bg-indigo-500;
+}
+
+.divider-h { @apply h-px bg-slate-200 dark:bg-slate-800; }
+.divider-v { @apply w-px bg-slate-200 dark:bg-slate-800; }

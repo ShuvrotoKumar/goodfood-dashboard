@@ -1,0 +1,33 @@
+# Node/Next.js
+node_modules/
+.next/
+out/
+.dist/
+.coverage/
+.temp/
+.cache/
+
+# Logs and env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.env*
+!.env.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Build artifacts
+*.log
+*.local
+*.zip
+
+# Misc
+.next/static/
+.vercel/
+.lintcache
