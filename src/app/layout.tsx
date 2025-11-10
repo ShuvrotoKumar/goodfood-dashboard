@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { AppShell } from "@/components/app-shell";
+import { RouteShell } from "@/components/route-shell";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -14,9 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AppShell>
+        <RouteShell>
           {children}
-        </AppShell>
+        </RouteShell>
       </body>
     </html>
   );
